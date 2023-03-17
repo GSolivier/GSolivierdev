@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🪐</title>
+    <link rel="icon" type="image/svg" href="assets/images/estrelas.png">
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+    <div class="values">
+        <header>
+            <div class="name">
+
+                <div>
+                    <h1>Guilherme Sousa</h1>
+                    <h2>Developer</h2>
+                </div>
+
+
+            </div>
+        </header>
+
+        <main>
+            <ul class="ul-main">
+                <div class="border-white"></div>
+
+                <li onclick="mostrarMenuDireita()"><a class = "projetos" href="#">Projetos</a></li>
+
+                <section id="projetos-tab"> 
+
+                    <a target="_blank" href="https://github.com/GSolivier/EstiloUX">
+                    <article class="content-projetos">
+                        <img src="assets/images/estiloux-preview.png" alt="">
+
+                        <div class="info-projetos">
+                            <h1>EstiloUX</h1>
+                        </div>
+                    </article>
+                    </a>
+
+                    <a target="_blank" href="https://github.com/GSolivier/atividade-landing-page">
+                    <article class="content-projetos2">
+                        <img src="assets/images/landing-page-preview.png" alt="">
+
+                        <div class="info-projetos">
+                            <h1>Landing Page</h1>
+                        </div>
+                    </article>
+                    </a>
+
+                    <a target="_blank" href="https://github.com/GSolivier/projeto-gamer">
+                    <article class="content-projetos3">
+                        <img src="assets/images/gamer-preview.png" alt="">
+
+                        <div class="info-projetos">
+                            <h1>Liga Gamers</h1>
+                        </div>
+                    </article>
+                    </a>
+
+                </section>
+                
+                <li> <a class="info" href="">Info</a></li>
+
+
+                <div class="contatos">
+                    <li > <a class="contatos-hover" href="#">Links</a></li>
+
+                    <div class="socials">
+                        <ul>
+                            <a target="_blank" href="https://github.com/GSolivier">
+                                <li>
+                                    <i class="fa fa-github"></i>
+                                </li>
+                            </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/guilherme-sousa-oliveira/">
+                                <li>
+                                    <i class="fa fa-linkedin"></i>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <i class="fa fa-instagram"></i>
+                                </li>
+                            </a>
+                            <a target="_blank" href="https://twitter.com/waternoose__">
+                                <li>
+                                    <i class="fa fa-twitter"></i>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <i class="fa-brands fa-discord"></i>
+                                </li>
+                            </a>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+
+            </ul>
+
+        </main>
+
+        <footer>
+            <p>©Guilherme Sousa Oliveira - 2023</p>
+        </footer>
+        <script src="https://kit.fontawesome.com/fc692f1356.js" crossorigin="anonymous"></script>
+        
+        <script>
+
+            function mostrarMenuDireita() {
+                document.getElementById("projetos-tab").classList.toggle("mostrarMenuDireita")
+            }
+        </script>
+    </div>
+</body>
+
+</html>
