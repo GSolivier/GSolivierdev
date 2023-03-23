@@ -35,7 +35,7 @@
     padding: 30px;
 }
 
-.name h1 {
+ h1 {
     font-family: "mulish";
     font-weight: 200;
     font-size: 60px;
@@ -78,6 +78,7 @@ main .ul-main li a {
 
 #projetos-tab{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     padding: 35px;
     opacity: 0;
@@ -89,7 +90,7 @@ main .ul-main li a {
     top: 0;
     width: 71%;
     box-shadow: -0px 0px 50px rgba(0, 0, 0, 0.2);
-    border-radius: 8px 0 0 8px;
+    border-radius: 32px;
     background-image: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255,255, 0.1));
     transition: right 0.9s, opacity 0.5s;
     backdrop-filter: blur(5px);
@@ -97,6 +98,10 @@ main .ul-main li a {
 
 #projetos-tab a {
     text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0, 0);
+    transition: box-shadow 0.5s;
+    transition: background 0.5s;
 }
 
 .border-white{
@@ -112,61 +117,53 @@ main .ul-main li a {
 }
 
 .content-projetos{
-    /* border: 1px solid green; */
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: linear-gradient( rgba(48, 49, 53, 0.6), rgba(48, 49 , 53, 0.1));
-    width: 250px;
-    height: 250px;
+    justify-content: space-evenly;
+    width: max-content;
     border-radius: 8px;
-    transition: box-shadow 0.5s;
+    background: transparent;
 }
 .content-projetos2{
-    /* border: 1px solid green; */
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: linear-gradient( rgba(48, 49, 53, 0.6), rgba(48, 49 , 53, 0.1));
-    width: 250px;
-    height: 250px;
+    justify-content: space-evenly;
+    width: max-content;
     border-radius: 8px;
-    transition: box-shadow 0.5s;
+    
 }
 .content-projetos3{
-    /* border: 1px solid green; */
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: linear-gradient( rgba(48, 49, 53, 0.6), rgba(48, 49 , 53, 0.1));
-    width: 250px;
-    height: 250px;
+    justify-content: space-evenly;
+    width: max-content;
     border-radius: 8px;
-    transition: box-shadow 0.5s;
 }
 
 article img{
-    border-radius: 8px 8px 0 0;
-    width: 100%;
-    height: 50%;
+    border-radius: 8px;
+    width: 250px;
+    height: 120px;
     
 }
 
-.info-projetos {
-    font-family: "mulish";
-    font-weight: 600;
-    color: white;
-    display: grid;
-    place-items: center;
-    margin-bottom: 55px;
+.info-projetos h1{
+    font-size: 36px;
 }
 
-.content-projetos:hover,
-.content-projetos2:hover,
-.content-projetos3:hover {
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+.info-projetos p{
+    font-size: 17px;
+}
+
+.info-projetos{
+    color: black;
+    margin-left: 20px;
+    width: 600px;
+}
+
+#projetos-tab a:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right,rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0.1) );
     
 }
+
 /* Contatos */
 
 .contatos{
@@ -181,12 +178,10 @@ article img{
 .socials {
     /* border: 1px solid green; */
     width: 200px;
-    height: 0;
+    height: 44px;
     min-width: max-content;
     overflow: hidden;
     position: relative;
-    -webkit-transition: max-height 0.8s;
-    transition: height 0.8s;
   }
 
 .contatos-hover:hover,
@@ -196,12 +191,6 @@ article img{
     background-color: black;
     padding: 2px;
     
-}
-
-.contatos:hover .socials,
-.contatos:focus .socials,
-.contatos:focus-within .socials {
-    height: 44px;
 }
 
 .contatos:hover .socials > ul{
