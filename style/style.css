@@ -97,7 +97,6 @@ main .ul-main li a {
 
 #projetos-tab a {
     text-decoration: none;
-
 }
 
 .border-white{
@@ -180,12 +179,14 @@ article img{
 }
 
 .socials {
-    max-height: 0;
+    /* border: 1px solid green; */
+    width: 200px;
+    height: 0;
     min-width: max-content;
     overflow: hidden;
     position: relative;
-    -webkit-transition: max-height 1s;
-    transition: max-height 1s;
+    -webkit-transition: max-height 0.8s;
+    transition: height 0.8s;
   }
 
 .contatos-hover:hover,
@@ -200,7 +201,11 @@ article img{
 .contatos:hover .socials,
 .contatos:focus .socials,
 .contatos:focus-within .socials {
-    max-height: 200px;
+    height: 44px;
+}
+
+.contatos:hover .socials > ul{
+    top: -10px;
 }
 
   .socials ul {
@@ -209,7 +214,13 @@ article img{
       list-style-type: none;
       width: 200px;
       justify-content: space-between;
+
+      position: absolute;
+      top: -100px;
+      left: 0;
+      transition: top 1.0s;
   }
+
   .socials ul li {
       position: relative;
       height: 50px;
@@ -229,7 +240,6 @@ article img{
     transition: all 0.1s ease-in;  
     z-index: 10;
   }
-
 
   .fa-instagram:hover {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
