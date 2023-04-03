@@ -136,11 +136,31 @@ main .ul-main li{
 }
 
 
-.scroll a::before{
+.scroll .a1::before{
     position: absolute;
     content: "";
     inset: 0;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.1),rgba(255, 0, 0, 0.7));
+    background-image: linear-gradient(to right, rgba(89, 89, 89, 0.7),rgba(187, 187, 187, 0.3));
+    z-index: -1;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+    border-radius: 8px;
+}
+.scroll .a2::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.7),rgba(255, 0, 0, 0.3));
+    z-index: -1;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+    border-radius: 8px;
+}
+.scroll .a3::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-image: linear-gradient(to right, rgba(27, 20, 38),rgba(27, 20, 38, 0.3));
     z-index: -1;
     transition: opacity 0.3s linear;
     opacity: 0;
@@ -213,6 +233,8 @@ article img{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
+/* INFO */
+
 /* Contatos */
 
 .contatos{
@@ -237,7 +259,8 @@ article img{
 .info:hover{
     color: white;
     background-color: black;
-    padding: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .contatos:hover .socials > ul{

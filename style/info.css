@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "mulish";
+    src: url(../assets/fonts/Mulish/Mulish-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(../assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.values{
+    background-image: url(../assets/images/download.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid grey;
+    height: calc(100vh - 20px);
+    margin: 10px 10px 10px 10px;
+}
+
+/* Header */
+
+header a:hover{
+    box-shadow: 0 0 15px black;
+    border-radius: 32px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+header a{
+    max-width: max-content;
+}
+
+.name{
+display: flex;
+justify-content: space-between;
+padding: 10px;
+}
+
+h1 {
+font-family: "mulish";
+font-weight: 200;
+font-size: 60px;
+}
+
+.header-profile{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile-pic{
+    align-self: center;
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 80px;
+}
+/* Footer */
+
+footer p{
+    color: black;
+    font-family: "mulish";
+    position: fixed;
+    top: 95%;
+    left: 44%;
+
+}
