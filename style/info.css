@@ -47,12 +47,6 @@ header a{
     max-width: max-content;
 }
 
-.name{
-display: flex;
-justify-content: space-between;
-padding: 10px;
-}
-
 h1 {
 font-family: "mulish";
 font-weight: 200;
@@ -69,15 +63,38 @@ font-size: 40px;
 
 .profile-pic{
     align-self: center;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border: 1px solid black;
     border-radius: 80px;
 }
 /* MAIN */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main > p:first-of-type{
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
 main p{
     font-family: "roboto";
-    text-align: center;
+    text-align: justify;
+}
+
+.paragrafo{
+    height: max-content;
+    width: 700px;
+}
+
+.paragrafo p {
+    margin-bottom: 20px;
 }
 
 /* Footer */

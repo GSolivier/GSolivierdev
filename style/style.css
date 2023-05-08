@@ -168,6 +168,16 @@ main .ul-main li{
     opacity: 0;
     border-radius: 8px;
 }
+.scroll .a4::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-image: linear-gradient(to right, rgb(206, 255, 107),rgba(206, 255, 107, 0.3));
+    z-index: -1;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+    border-radius: 8px;
+}
 
 #projetos-tab .scroll a:hover::before{
     opacity: 1;
@@ -207,13 +217,12 @@ main .ul-main li{
     justify-content: space-evenly;
     border-radius: 8px;
 }
-
 article img{
     position: relative;
     z-index: 3;
     border-radius: 8px;
     width: 250px;
-    height: 120px;
+    height: 100%;
     
 }
 
